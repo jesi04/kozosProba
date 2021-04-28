@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:text="Adatok bekérése"
+        android:layout_margin="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="40dp"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/nev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:inputType="text"
+        android:hint="Név"/>
+    <EditText
+        android:id="@+id/datum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="szül.dátum"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:inputType="date"
+        android:layout_below="@id/nev"/>
+    <EditText
+        android:id="@+id/szemelyi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="szig. szám"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/datum"/>
+
+    <Button
+        android:id="@+id/tovabb"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/szemelyi"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Továbbítás"/>
+
+</RelativeLayout>
